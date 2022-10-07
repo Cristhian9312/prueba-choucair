@@ -16,7 +16,6 @@ import java.util.List;
 public class ChoucairAcademyStepDefinitions {
     @Before
     public void setStage(){ OnStage.setTheStage(new OnlineCast()); }
-
     @Given("^there is a form to enroll information$")
     public void thereIsAFormToEnrollInformation(List<ChoucairData> choucairData) throws Exception {
         OnStage.theActorCalled("Cristhian").wasAbleTo(OpenUp.thePAge(),  JoinToday.onThePage(choucairData.get(0).getFirstName(),choucairData.get(0).getLastNname()));

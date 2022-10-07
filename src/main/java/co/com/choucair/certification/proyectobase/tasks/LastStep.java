@@ -23,8 +23,8 @@ public class LastStep implements Task{
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo( Enter.theValue("M1C0n7r@S3Na").into(ChoucairLastStepPage.UTEST_PASSWORD),
-                Enter.theValue("M1C0n7r@S3Na").into(ChoucairLastStepPage.CONFIRM_PASSWORD),
+        actor.attemptsTo( Enter.theValue(password).into(ChoucairLastStepPage.UTEST_PASSWORD),
+                Enter.theValue(confirmPassword).into(ChoucairLastStepPage.CONFIRM_PASSWORD),
                 Click.on(ChoucairLastStepPage.STAY_INFORMED),
                 Click.on(ChoucairLastStepPage.UTEST_TERMS),
                 Click.on(ChoucairLastStepPage.PRIVACY_SECURITY_POLICY),
